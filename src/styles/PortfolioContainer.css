@@ -18,3 +18,9 @@
 .page-card h1 {
     text-shadow: 5px 5px 5px #0c0c0cfa;
 }
+
+@media screen and (max-width: 500px) {
+    .page-container {
+        margin: 10px;
+    }
+}
