@@ -1,8 +1,7 @@
-import './App.css';
+import PortfolioContainer from './components/PortfolioContainer';
 
-function App() {
+function App () {
   return (
-    <Header/>,
     <PortfolioContainer/>
   );
 }
