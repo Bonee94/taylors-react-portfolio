@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/NavLinks.css'
 
 function NavLinks ({ currentPage, handlePageChange }) {
     return (
