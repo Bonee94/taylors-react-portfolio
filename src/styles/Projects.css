@@ -1,0 +1,128 @@
+.big-work-tiles {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.big-work-tiles a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 90%;
+  width: 100%;
+}
+
+.big-work-tiles a img {
+  height: 100%;
+  width: 90%;
+  border: 0.3vw solid lightblue;
+  filter: grayscale(70%) blur(2px);
+  transition: 0.3s filter linear;
+}
+
+.big-work-tiles img:hover,
+.small-work-tiles img:hover {
+  transition: 0.3s filter linear;
+  filter: grayscale(0%) blur(0px);
+}
+
+.big-work-tiles h1 {
+  color: rgb(255, 255, 255);
+}
+
+.small-work-tiles {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+.small-work-tiles a {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.small-work-tiles h2 {
+  color: rgb(255, 255, 255);
+}
+
+.small-work-tiles img {
+  height: 25vw;
+  width: 95%;
+  border: 0.3vw solid rgb(172, 172, 172);
+  filter: grayscale(70%) blur(1px);
+  transition: 0.3s filter linear;
+}
+
+.project-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(
+      0deg,
+      rgb(72, 72, 72),
+      #71927e 50%,
+      rgb(72, 72, 72)
+    );
+    width: auto;
+    border-radius: 8px;
+    border: 4px solid #71927e;
+    padding: 3px 10px;
+    margin: 10px 5px 20px;
+  }
+
+.tiles a {
+    color: #797878;
+    transition:color .5s, font-size .5s;
+}
+
+.tiles a:hover {
+    color: #ffffff;
+    font-size: larger;
+}
+
+
+@media screen and (max-width: 500px) {
+  .tiles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .tiles a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #dadbdb;
+    width: 100%;
+  }
+
+  .tiles a img {
+    height: 50vh;
+    width: 80vw;
+    margin: 0;
+  }
+
+  .tiles h1,
+  .tiles h2 {
+    font-size: 12px;
+    position: static;
+    color: rgb(255, 255, 255);
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .small-work-tiles {
+    width: 100%;
+  }
+
+  
+}
