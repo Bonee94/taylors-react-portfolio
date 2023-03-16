@@ -1,0 +1,39 @@
+.hdr-section-1{
+    height: 9vw;
+    display: flex;
+    /*bg options*/
+    background: radial-gradient(circle, transparent 30%, black 100%),
+    url('../assets/images/Screenshot\ 2022-10-21\ 223902.png');
+    background-blend-mode: 
+    var(--blend-top, normal),
+    var(--blend-bottom, saturation),
+    normal;    
+    background-size: cover;
+    /*--flex rules--*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-name-hdr{
+    font-size: 4vw;
+    text-shadow: 5px 5px 5px #0c0c0cfa;
+    padding: .2% 1% .2% 5.5%;
+    color: #ffffff;
+}
+
+.hdr-banner-img{
+    z-index: -1;
+    width: 100%;
+    height: 10vw;
+}
+
+.profile-picture{
+    position: relative;
+    height: 12vw;
+    width: 10vw;
+    border: solid .5vw white;
+    border-radius: 50%;
+    margin-top: 1em;
+    left: 4vw;
+}
