@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/taylors-react-portfolio/static/css/main.3a676eea.css",
-    "main.js": "/taylors-react-portfolio/static/js/main.7c219f97.js",
+    "main.css": "/taylors-react-portfolio/static/css/main.e2fa3cb2.css",
+    "main.js": "/taylors-react-portfolio/static/js/main.a51350a1.js",
+    "static/media/Horiseon.png": "/taylors-react-portfolio/static/media/Horiseon.e285fea5ca23c2216b74.png",
+    "static/media/sb-realty.PNG": "/taylors-react-portfolio/static/media/sb-realty.55c29047f5d207fa462e.PNG",
+    "static/media/nature-bg.webp": "/taylors-react-portfolio/static/media/nature-bg.17775ef2ff631112dedb.webp",
     "static/media/Taylor-profile-pic.png": "/taylors-react-portfolio/static/media/Taylor-profile-pic.42835d979fc2293f65ba.png",
     "static/media/Screenshot 2022-10-21 223902.png": "/taylors-react-portfolio/static/media/Screenshot 2022-10-21 223902.c00ff546536e20e8c429.png",
+    "static/media/fist-bump.jpg": "/taylors-react-portfolio/static/media/fist-bump.2aa461796ea9a7868b67.jpg",
+    "static/media/tree-bg.webp": "/taylors-react-portfolio/static/media/tree-bg.c8e58bc44a1ef93cec04.webp",
     "index.html": "/taylors-react-portfolio/index.html",
-    "main.3a676eea.css.map": "/taylors-react-portfolio/static/css/main.3a676eea.css.map",
-    "main.7c219f97.js.map": "/taylors-react-portfolio/static/js/main.7c219f97.js.map"
+    "main.e2fa3cb2.css.map": "/taylors-react-portfolio/static/css/main.e2fa3cb2.css.map",
+    "main.a51350a1.js.map": "/taylors-react-portfolio/static/js/main.a51350a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a676eea.css",
-    "static/js/main.7c219f97.js"
+    "static/css/main.e2fa3cb2.css",
+    "static/js/main.a51350a1.js"
   ]
 }
