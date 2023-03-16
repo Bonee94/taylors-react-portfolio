@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import About from './pages/About';
+import '../styles/PortfolioContainer.css'
 
 
 export default function PortfolioContainer() {
