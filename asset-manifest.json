@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/taylors-react-portfolio/static/css/main.3a676eea.css",
+    "main.js": "/taylors-react-portfolio/static/js/main.7c219f97.js",
+    "static/media/Taylor-profile-pic.png": "/taylors-react-portfolio/static/media/Taylor-profile-pic.42835d979fc2293f65ba.png",
+    "static/media/Screenshot 2022-10-21 223902.png": "/taylors-react-portfolio/static/media/Screenshot 2022-10-21 223902.c00ff546536e20e8c429.png",
+    "index.html": "/taylors-react-portfolio/index.html",
+    "main.3a676eea.css.map": "/taylors-react-portfolio/static/css/main.3a676eea.css.map",
+    "main.7c219f97.js.map": "/taylors-react-portfolio/static/js/main.7c219f97.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a676eea.css",
+    "static/js/main.7c219f97.js"
+  ]
+}
