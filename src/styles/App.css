@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #71927e;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 8vw;
+}
+
+h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+}

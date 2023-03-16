@@ -1,5 +1,4 @@
 .hdr-section-1{
-    height: 9vw;
     display: flex;
     /*bg options*/
     background: radial-gradient(circle, transparent 30%, black 100%),
@@ -13,9 +12,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 4px solid #ffffff;
 }
 
 .my-name-hdr{
+    margin: 4vh 0;
     font-size: 4vw;
     text-shadow: 5px 5px 5px #0c0c0cfa;
     padding: .2% 1% .2% 5.5%;
@@ -36,4 +37,5 @@
     border-radius: 50%;
     margin-top: 1em;
     left: 4vw;
+    box-shadow: 5px 5px 6px black ;
 }
