@@ -3,10 +3,11 @@ import Header from './Header';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import '../styles/PortfolioContainer.css'
+import Footer from './Footer';
 
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Portfolio');
+  const [currentPage, setCurrentPage] = useState('About');
 
   // this is checking the value of current page state and returning the proper page
   const renderPage = () => {
@@ -24,6 +25,7 @@ export default function PortfolioContainer() {
     <div>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
+      <Footer/>
     </div>
   );
 }
