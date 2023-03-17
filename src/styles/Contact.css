@@ -1,0 +1,38 @@
+.form-box {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.form-inputs {
+  margin: 3px;
+  font-size: 1.1em;
+}
+
+.req-message{
+    color: rgba(255, 152, 152, 0.562);
+    font-size: .8em;
+}
+
+#contact-message {
+  height: 25vh;
+}
+
+#contact-submit {
+    width: 30%;
+    margin: 5px 15px;
+}
+
+
+@media screen and (max-width:1000px) {
+    .form-box {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+      }
+}
