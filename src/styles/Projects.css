@@ -59,35 +59,39 @@
 }
 
 .project-titles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    background: linear-gradient(
-      0deg,
-      rgb(72, 72, 72),
-      #71927e 50%,
-      rgb(72, 72, 72)
-    );
-    width: auto;
-    border-radius: 8px;
-    border: 4px solid #71927e;
-    padding: 3px 10px;
-    margin: 10px 5px 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(
+    0deg,
+    rgb(72, 72, 72),
+    #71927e 50%,
+    rgb(72, 72, 72)
+  );
+  width: auto;
+  border-radius: 8px;
+  border: 4px solid #71927e;
+  padding: 3px 10px;
+  margin: 10px 5px 20px;
+}
 
 .tiles a {
-    color: #797878;
-    transition:color .5s, font-size .5s;
+  color: #aec9fa;
+  transition: color 0.3s, font-size 0.5s;
 }
 
 .tiles a:hover {
-    color: #ffffff;
-    font-size: larger;
+  color: #ffffff;
+  font-size: larger;
 }
 
-
 @media screen and (max-width: 500px) {
+  .big-work-tiles a img,
+  .small-work-tiles a img {
+    filter: grayscale(0) blur(0);
+  }
+
   .tiles {
     display: flex;
     align-items: center;
@@ -123,6 +127,4 @@
   .small-work-tiles {
     width: 100%;
   }
-
-  
 }
