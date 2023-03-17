@@ -17,9 +17,9 @@ export default function Projects({
           <Images imgSrc={imgSrc} imgAlt={imgAlt} />
         </a>
         <div className="project-titles">
-            <h2>{projTitle}</h2>
+            <h2><a href={href} className="project-title-link">{projTitle}</a></h2>
             <h3>
-            <a href={githubRepo}>Github Project Repo</a>
+            <a href={githubRepo}>Github Repo</a>
             </h3>
         </div>
       </div>
@@ -33,9 +33,9 @@ export default function Projects({
           <Images imgSrc={imgSrc} imgAlt={imgAlt} />
         </a>
         <div className="project-titles">
-            <h1>{projTitle}</h1>
+            <h1><a href={href} className="project-title-link">{projTitle}</a></h1>
             <h3>
-            <a href={githubRepo}>Github Project Repo</a>
+            <a href={githubRepo}>Github Repo</a>
             </h3>
         </div>
       </div>
