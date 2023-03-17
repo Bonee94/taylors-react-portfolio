@@ -4,19 +4,23 @@ const Images = ({ imgSrc, imgAlt }) => {
   switch (imgSrc) {
     case "parkLocator":
       return (
-        <img src={require("../assets/images/nature-bg.webp")} alt={imgAlt} />
+        <img src={require("../assets/images/national-park-locator.PNG")} alt={imgAlt} />
+      );
+    case "techBlog":
+      return (
+        <img src={require("../assets/images/tech-blog.PNG")} alt={imgAlt} />
+      );
+    case "weatherApp":
+      return (
+        <img src={require("../assets/images/weather-app.png")} alt={imgAlt} />
       );
     case "horiseon":
       return (
         <img src={require("../assets/images/Horiseon.png")} alt={imgAlt} />
       );
-    case "fistBump":
+    case "JATE":
       return (
-        <img src={require("../assets/images/fist-bump.jpg")} alt={imgAlt} />
-      );
-    case "tree":
-      return (
-        <img src={require("../assets/images/tree-bg.webp")} alt={imgAlt} />
+        <img src={require("../assets/images/jate-app.PNG")} alt={imgAlt} />
       );
     case "sbRealty":
       return (
