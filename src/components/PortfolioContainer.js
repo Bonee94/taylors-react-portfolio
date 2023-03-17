@@ -4,10 +4,11 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import '../styles/PortfolioContainer.css'
 import Footer from './Footer';
+import Contact from './pages/Contact';
 
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('About');
+  const [currentPage, setCurrentPage] = useState('Contact');
 
   // this is checking the value of current page state and returning the proper page
   const renderPage = () => {
@@ -16,6 +17,9 @@ export default function PortfolioContainer() {
     };
     if (currentPage === 'Portfolio') {
       return <Portfolio />;
+    }
+    if (currentPage === 'Contact') {
+      return <Contact />;
     }
   };
 
