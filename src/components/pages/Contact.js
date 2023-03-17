@@ -17,6 +17,7 @@ export default function Contact() {
             }
             setNameReq("")
         }
+
         if (caller === "email") {
             if ( event.target.value === '') {
                 setEmailReq(requiredMes)
@@ -24,6 +25,18 @@ export default function Contact() {
             }
             setEmailReq("")
         }
+
+        if (caller === "emailValid") {
+            if ( event.target.value === '') {
+                setEmailReq(requiredMes)
+                return
+            }
+
+        const valid = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/i.test(event.target.value);
+
+        valid ? setEmailReq('') : setEmailReq("*A valid email address is required*");  
+        }
+
         if (caller === "message") {
             if ( event.target.value === '') {
                 setMessageReq(requiredMes)
@@ -48,9 +61,9 @@ export default function Contact() {
         <label className='form-inputs'>Email: <span className='req-message'>{emailReq}</span></label>
         <input className='form-inputs'
         onChange={event => changeReq(event, "email")}
-        onMouseLeave={event => changeReq(event, "email")}
-        onBlur={event => changeReq(event, "email")}
-         type="text" id='contact-email'></input>
+        onMouseLeave={event => changeReq(event, "emailValid")}
+        onBlur={event => changeReq(event, "emailValid")}
+         type="email" id='contact-email'></input>
         
         <label className='form-inputs'>Message: <span className='req-message'>{messageReq}</span></label>
         <textarea className='form-inputs' 
