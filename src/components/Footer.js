@@ -13,15 +13,15 @@ function Footer({ currentPage, handlePageChange }) {
         </a>
         <a
           key="icon2"
-          href="https://www.linkedin.com/in/taylor-turner-44377426a/"
+          href="https://github.com/Bonee94"
         >
-          <i class="fa fa-github"></i>
+          <i className="fa fa-github"></i>
         </a>
         <a
           key="icon3"
-          href="https://www.linkedin.com/in/taylor-turner-44377426a/"
+          href="https://www.facebook.com/taylor.turner.94043"
         >
-          <i class="fa fa-stack-overflow"></i>
+          <i className="fa fa-facebook"></i>
         </a>
       </div>
     </footer>
