@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Contact');
+  const [currentPage, setCurrentPage] = useState('About');
 
   // this is checking the value of current page state and returning the proper page
   const renderPage = () => {
