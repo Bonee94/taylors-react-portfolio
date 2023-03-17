@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/taylors-react-portfolio/static/css/main.b38429f5.css",
-    "main.js": "/taylors-react-portfolio/static/js/main.4fe54c71.js",
+    "main.css": "/taylors-react-portfolio/static/css/main.bd91be61.css",
+    "main.js": "/taylors-react-portfolio/static/js/main.73f5dc65.js",
     "static/media/Horiseon.png": "/taylors-react-portfolio/static/media/Horiseon.e285fea5ca23c2216b74.png",
     "static/media/sb-realty.PNG": "/taylors-react-portfolio/static/media/sb-realty.55c29047f5d207fa462e.PNG",
-    "static/media/nature-bg.webp": "/taylors-react-portfolio/static/media/nature-bg.17775ef2ff631112dedb.webp",
     "static/media/Taylor-profile-pic.png": "/taylors-react-portfolio/static/media/Taylor-profile-pic.42835d979fc2293f65ba.png",
     "static/media/Screenshot 2022-10-21 223902.png": "/taylors-react-portfolio/static/media/Screenshot 2022-10-21 223902.c00ff546536e20e8c429.png",
-    "static/media/fist-bump.jpg": "/taylors-react-portfolio/static/media/fist-bump.2aa461796ea9a7868b67.jpg",
-    "static/media/tree-bg.webp": "/taylors-react-portfolio/static/media/tree-bg.c8e58bc44a1ef93cec04.webp",
+    "static/media/weather-app.png": "/taylors-react-portfolio/static/media/weather-app.12ad8927563fd540576e.png",
+    "static/media/national-park-locator.PNG": "/taylors-react-portfolio/static/media/national-park-locator.92f54b12ed4a25356bac.PNG",
+    "static/media/tech-blog.PNG": "/taylors-react-portfolio/static/media/tech-blog.2c89fe7e7ae183cda954.PNG",
+    "static/media/jate-app.PNG": "/taylors-react-portfolio/static/media/jate-app.4113ca6cc77962896696.PNG",
     "index.html": "/taylors-react-portfolio/index.html",
-    "main.b38429f5.css.map": "/taylors-react-portfolio/static/css/main.b38429f5.css.map",
-    "main.4fe54c71.js.map": "/taylors-react-portfolio/static/js/main.4fe54c71.js.map"
+    "main.bd91be61.css.map": "/taylors-react-portfolio/static/css/main.bd91be61.css.map",
+    "main.73f5dc65.js.map": "/taylors-react-portfolio/static/js/main.73f5dc65.js.map"
   },
   "entrypoints": [
-    "static/css/main.b38429f5.css",
-    "static/js/main.4fe54c71.js"
+    "static/css/main.bd91be61.css",
+    "static/js/main.73f5dc65.js"
   ]
 }
