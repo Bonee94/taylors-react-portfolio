@@ -7,7 +7,6 @@ export default function Resume() {
         <button onClick={() => {
             const site = window.location.href;
             const url = site.split('#')[0]+'/resume.pdf';
-            console.log(url);
             fetch(url)
             .then((response) => {
                 response.blob().then(blob => {
