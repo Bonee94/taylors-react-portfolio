@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/taylors-react-portfolio/static/css/main.bd91be61.css",
-    "main.js": "/taylors-react-portfolio/static/js/main.947afcb6.js",
+    "main.js": "/taylors-react-portfolio/static/js/main.bd9a915a.js",
     "static/media/Horiseon.png": "/taylors-react-portfolio/static/media/Horiseon.e285fea5ca23c2216b74.png",
     "static/media/sb-realty.PNG": "/taylors-react-portfolio/static/media/sb-realty.55c29047f5d207fa462e.PNG",
     "static/media/Taylor-profile-pic.png": "/taylors-react-portfolio/static/media/Taylor-profile-pic.42835d979fc2293f65ba.png",
@@ -12,10 +12,10 @@
     "static/media/jate-app.PNG": "/taylors-react-portfolio/static/media/jate-app.4113ca6cc77962896696.PNG",
     "index.html": "/taylors-react-portfolio/index.html",
     "main.bd91be61.css.map": "/taylors-react-portfolio/static/css/main.bd91be61.css.map",
-    "main.947afcb6.js.map": "/taylors-react-portfolio/static/js/main.947afcb6.js.map"
+    "main.bd9a915a.js.map": "/taylors-react-portfolio/static/js/main.bd9a915a.js.map"
   },
   "entrypoints": [
     "static/css/main.bd91be61.css",
-    "static/js/main.947afcb6.js"
+    "static/js/main.bd9a915a.js"
   ]
 }
