@@ -10,8 +10,9 @@ export default function Portfolio() {
     return (
     <div className='page-container'>
       <div className='page-card'>
-        <div className='flex-center'>
             <h1>My Projects</h1>
+            <h3>Click on images for deployed application</h3>
+        <div className='flex-center'>
             {getProjects.map((project, index) => {
                 return <Projects key={index} {...project}/>
             })}
