@@ -73,7 +73,7 @@ setDefaultProps({
         const fileURL = window.URL.createObjectURL(blob);
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "Taylor Turner";
+        alink.download = "Taylor_Turner.vcf";
         alink.click();
       });
     });
