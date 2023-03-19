@@ -2,13 +2,19 @@ import React from 'react';
 import '../../styles/Resume.css';
 
 export default function Resume() {
+  //For local development of qr code
+  // const site = window.location.href;
+  // const url = site.split('#')[0]+'/Taylor-Turner.vcf';
+
+  //for deployed qr code
+  const url =
+    "https://bonee94.github.io/taylors-react-portfolio/resume.pdf";
+  
   return (
     <div className='page-container'>
       <div className='page-card'>
         <h1>Resume</h1>
         <h2 id='resume-download-hdr'>Click to download my <button id="resume-submit" onClick={() => {
-            const site = window.location.href;
-            const url = site.split('#')[0]+'/resume.pdf';
             fetch(url)
             .then((response) => {
                 response.blob().then(blob => {
