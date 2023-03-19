@@ -79,7 +79,8 @@ export default function Contact() {
       Cell: <a href='tel:2103635213'>210-363-5213</a></p>
       
       <div className='qr-code-box'>
-      <img id='qr-code' src={qrCode} alt="contact qr code"></img>
+      <a href="https://qrco.de/bdolTn"><img id='qr-code' src={qrCode} alt="contact qr code"></img></a>
+      <h3>Scan or click for my info</h3>
       </div>
 
       </div>
