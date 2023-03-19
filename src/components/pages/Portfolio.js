@@ -6,6 +6,7 @@ import projectsArr from '../../assets/projects/projectsArr';
 export default function Portfolio() {
     //Gets separate list of projects held in another function
     const getProjects = projectsArr();
+    getProjects.sort((a,b) => {return a.id - b.id});
 
     return (
     <div className='page-container'>

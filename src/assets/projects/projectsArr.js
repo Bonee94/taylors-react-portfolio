@@ -1,6 +1,7 @@
 export default function projectsArr() {
     const projectsArr = [
     {
+        id: 1,
         href: "https://i-am-j-a-t-e.herokuapp.com/",
         imgSrc: "JATE",
         imgAlt: "just another text editor",
@@ -8,6 +9,7 @@ export default function projectsArr() {
         githubRepo: "https://github.com/Bonee94/Taylors-Text-Editor"
     },
     {
+        id: 3,
         href: "https://spangled-banner-realty.herokuapp.com/",
         imgSrc: "sbRealty",
         imgAlt: "SB Realty Project",
@@ -15,6 +17,7 @@ export default function projectsArr() {
         githubRepo: "https://github.com/LuisChevere/ProjectBCL"
     },
     {
+        id: 4,
         href: "https://rdalby2002.github.io/national-park-locator/",
         imgSrc: "parkLocator",
         imgAlt: "National Park Locator Project image",
@@ -22,6 +25,7 @@ export default function projectsArr() {
         githubRepo: "https://github.com/rdalby2002/national-park-locator"
     },
     {
+        id: 2,
         href: "https://hidden-fjord-74981.herokuapp.com/",
         imgSrc: "techBlog",
         imgAlt: "tech blog project image",
@@ -29,6 +33,7 @@ export default function projectsArr() {
         githubRepo: "https://github.com/Bonee94/Taylors-Tech-Blog"
     },
     {
+        id: 5,
         href: "https://bonee94.github.io/Taylors-Weather-Application/",
         imgSrc: "weatherApp",
         imgAlt: "weather application project image",
@@ -36,6 +41,7 @@ export default function projectsArr() {
         githubRepo: "https://github.com/Bonee94/Taylors-Weather-Application"
     },
     {
+        id: 6,
         href: "https://bonee94.github.io/Module-1-Challenge/",
         imgSrc: "horiseon",
         imgAlt: "Horiseon Application",
