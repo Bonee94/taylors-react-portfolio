@@ -1,11 +1,64 @@
 .form-box {
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 40%;
+}
+
+.form-box input.form-inputs {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0);
+}
+
+.form-box textarea.form-inputs {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0);
+}
+
+.contact-flexbox {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.contact-flexbox h2 {
+  margin: 20px;
 }
 
 .qr-code-box {
   display: none;
+}
+
+.qr-code-box-big {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  align-items: center;
+}
+
+#qr-code {
+  height: 200px;
+  width: 180px;
+  box-shadow: 5px 5px 10px black;
+  animation: blurred 1s linear;
+}
+
+@keyframes blurred {
+  0% {
+    filter: grayscale(100%) blur(100px);
+    opacity: 0;
+  }
+  100% {
+    filter: grayscale(0%) blur(0px);
+    opacity: 1;
+  }
+}
+
+#qr-code-btn {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 a {
@@ -28,22 +81,18 @@ a {
 }
 
 #contact-submit {
-  font-size: .8em;
+  font-size: 0.8em;
   width: auto;
   margin: 10px auto;
   padding: 2px 10px;
   background-color: #71927e;
   color: #fff;
-  transition: font-size .4s;
+  transition: font-size 0.4s;
 }
 
 #contact-submit:hover {
   font-size: 1em;
   background-color: #4e6657;
-}
-
-.qr-code-box {
-  display: none;
 }
 
 @media screen and (max-width: 1000px) {
@@ -65,6 +114,10 @@ a {
     height: 35vh;
   }
 
+  .qr-code-box-big {
+    display: none;
+  }
+
   .qr-code-box {
     display: flex;
     width: 100%;
@@ -72,8 +125,20 @@ a {
     flex-direction: column;
   }
 
-  #qr-code {
+  .qr-code-anim-small #qr-code-invis {
+    transition: 1s filter linear, opacity 1s linear;
+    -webkit-transition: 1s -webkit-filter linear, opacity 1s linear;
+    -moz-transition: 1s -moz-filter linear, opacity 1s linear;
+    -ms-transition: 1s -ms-filter linear, opacity 1s linear;
+    -o-transition: 1s -o-filter linear, opacity 1s linear;
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  .qr-code-invis {
+    opacity: 0.01;
     height: 100px;
     width: 90px;
+    filter: blur(100px);
   }
 }
