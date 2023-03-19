@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../../styles/Contact.css'
+import qrCode from '../../assets/images/contact-qr-code.png'
 
 
 export default function Contact() {
@@ -76,6 +77,11 @@ export default function Contact() {
       </section>
       <p>Or at: <br/>Email: <a href='mailto:Bonee94@yahoo.com'>Bonee94@yahoo.com</a> <br/>
       Cell: <a href='tel:2103635213'>210-363-5213</a></p>
+      
+      <div className='qr-code-box'>
+      <img id='qr-code' src={qrCode} alt="contact qr code"></img>
+      </div>
+
       </div>
     </div>
   );
