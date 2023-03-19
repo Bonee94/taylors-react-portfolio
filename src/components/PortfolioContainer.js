@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
@@ -10,6 +10,10 @@ import Resume from './pages/Resume';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
+
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  });
 
   // this is checking the value of current page state and returning the proper page
   const renderPage = () => {
@@ -27,7 +31,10 @@ export default function PortfolioContainer() {
     }
   };
 
-  const handlePageChange = (page) => setCurrentPage(page);
+  const handlePageChange = async (page) => {
+    await setCurrentPage('')
+    setCurrentPage(page)
+  };
 
   return (
     <div>
