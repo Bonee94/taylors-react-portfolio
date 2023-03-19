@@ -2,7 +2,7 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 0px;
+  margin: 0px 0 20px;
 }
 
 .fa {
@@ -18,12 +18,16 @@ footer {
   );
   background-size: 300% 300%;
   transition: font-size 0.6s;
+  /* animation */
+  animation: imageMove 4s linear infinite paused;
+  -webkit-animation: imageMove 4s linear infinite paused;
 }
 
 .fa:hover {
   font-size: 90px;
+  animation: imageMove 4s linear infinite, rotate 0.3s linear infinite;
   -webkit-animation: imageMove 4s linear infinite, rotate 0.3s linear infinite;
-  animation: imageMove 5s linear infinite, rotate 0.3s linear infinite;
+  animation-play-state: running;
 }
 
 @keyframes imageMove {

@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #71927e;
+    background-image: radial-gradient(#202c25 30%, #95c0a6);
 }
 
 main{
