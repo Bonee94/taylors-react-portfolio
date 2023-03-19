@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/taylors-react-portfolio/static/css/main.7ba93779.css",
-    "main.js": "/taylors-react-portfolio/static/js/main.d7d8dcac.js",
+    "main.css": "/taylors-react-portfolio/static/css/main.2ecf27fc.css",
+    "main.js": "/taylors-react-portfolio/static/js/main.e947008d.js",
     "static/media/Horiseon.png": "/taylors-react-portfolio/static/media/Horiseon.e285fea5ca23c2216b74.png",
     "static/media/sb-realty.PNG": "/taylors-react-portfolio/static/media/sb-realty.55c29047f5d207fa462e.PNG",
     "static/media/Taylor-profile-pic.png": "/taylors-react-portfolio/static/media/Taylor-profile-pic.42835d979fc2293f65ba.png",
@@ -12,11 +12,11 @@
     "static/media/tech-blog.PNG": "/taylors-react-portfolio/static/media/tech-blog.2c89fe7e7ae183cda954.PNG",
     "static/media/jate-app.PNG": "/taylors-react-portfolio/static/media/jate-app.4113ca6cc77962896696.PNG",
     "index.html": "/taylors-react-portfolio/index.html",
-    "main.7ba93779.css.map": "/taylors-react-portfolio/static/css/main.7ba93779.css.map",
-    "main.d7d8dcac.js.map": "/taylors-react-portfolio/static/js/main.d7d8dcac.js.map"
+    "main.2ecf27fc.css.map": "/taylors-react-portfolio/static/css/main.2ecf27fc.css.map",
+    "main.e947008d.js.map": "/taylors-react-portfolio/static/js/main.e947008d.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ba93779.css",
-    "static/js/main.d7d8dcac.js"
+    "static/css/main.2ecf27fc.css",
+    "static/js/main.e947008d.js"
   ]
 }
