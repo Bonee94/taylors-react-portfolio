@@ -74,9 +74,12 @@ footer {
 @media screen and (max-width: 500px) {
   .fa {
     font-size: 40px;
+    margin: 0 20px 20px;
+
   }
 
   .fa:hover {
     font-size: 70px;
   }
+
 }

@@ -32,3 +32,12 @@
   font-size: larger; 
   color: #b9ddb6;
 }
+
+@media screen and (max-width: 500px) {
+  .hdr-nav-list {
+    width: 100%;
+    padding: 0;
+    margin: 2vh auto 4vh;
+    font-size: 1rem;
+  }
+}

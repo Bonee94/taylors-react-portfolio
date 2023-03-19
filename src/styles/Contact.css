@@ -4,9 +4,13 @@
   width: 30vw;
 }
 
+#qr-code {
+  display: none;
+}
+
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .form-inputs {
@@ -14,9 +18,9 @@ a {
   font-size: 1.1em;
 }
 
-.req-message{
-    color: rgba(255, 152, 152, 0.562);
-    font-size: .8em;
+.req-message {
+  color: rgba(255, 152, 152, 0.562);
+  font-size: 0.8em;
 }
 
 #contact-message {
@@ -24,15 +28,42 @@ a {
 }
 
 #contact-submit {
-    width: 30%;
-    margin: 5px 15px;
+  width: 30%;
+  margin: 5px 15px;
 }
 
+.qr-code-box {
+  display: none;
+}
 
-@media screen and (max-width:1000px) {
-    .form-box {
-        display: flex;
-        flex-direction: column;
-        width: 50vw;
-      }
+@media screen and (max-width: 1000px) {
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #contact-message {
+    height: 35vh;
+  }
+
+  .qr-code-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #qr-code {
+    height: 80px;
+    width: 70px;
+    display: block;
+  }
 }
