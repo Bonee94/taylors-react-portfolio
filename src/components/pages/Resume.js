@@ -15,7 +15,7 @@ export default function Resume() {
                     const fileURL = window.URL.createObjectURL(blob);
                     let alink = document.createElement('a');
                     alink.href = fileURL;
-                    alink.download = 'SamplePDF.pdf';
+                    alink.download = 'Taylor-Turner-Resume.pdf';
                     alink.click();
                 })}) 
         
