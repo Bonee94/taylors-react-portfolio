@@ -6,7 +6,8 @@ export default function projectsArr() {
         imgSrc: "JATE",
         imgAlt: "just another text editor",
         projTitle: "J.A.T.E",
-        githubRepo: "https://github.com/Bonee94/Taylors-Text-Editor"
+        githubRepo: "https://github.com/Bonee94/Taylors-Text-Editor",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi quod dolorum dolorem sit exercitationem, quo optio incidunt, est modi nulla, libero ratione fuga? Tempora quod enim earum rem modi."
     },
     {
         id: 3,
@@ -14,7 +15,8 @@ export default function projectsArr() {
         imgSrc: "sbRealty",
         imgAlt: "SB Realty Project",
         projTitle: "SB Realty Group",
-        githubRepo: "https://github.com/LuisChevere/ProjectBCL"
+        githubRepo: "https://github.com/LuisChevere/ProjectBCL",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi quod dolorum dolorem sit exercitationem, quo optio incidunt, est modi nulla, libero ratione fuga? Tempora quod enim earum rem modi."
     },
     {
         id: 4,
@@ -22,7 +24,8 @@ export default function projectsArr() {
         imgSrc: "parkLocator",
         imgAlt: "National Park Locator Project image",
         projTitle: "National Park Route Planner",
-        githubRepo: "https://github.com/rdalby2002/national-park-locator"
+        githubRepo: "https://github.com/rdalby2002/national-park-locator",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi quod dolorum dolorem sit exercitationem, quo optio incidunt, est modi nulla, libero ratione fuga? Tempora quod enim earum rem modi."
     },
     {
         id: 2,
@@ -30,7 +33,8 @@ export default function projectsArr() {
         imgSrc: "techBlog",
         imgAlt: "tech blog project image",
         projTitle: "My Tech Blog",
-        githubRepo: "https://github.com/Bonee94/Taylors-Tech-Blog"
+        githubRepo: "https://github.com/Bonee94/Taylors-Tech-Blog",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi quod dolorum dolorem sit exercitationem, quo optio incidunt, est modi nulla, libero ratione fuga? Tempora quod enim earum rem modi."
     },
     {
         id: 5,
@@ -38,7 +42,8 @@ export default function projectsArr() {
         imgSrc: "weatherApp",
         imgAlt: "weather application project image",
         projTitle: "Weather Application",
-        githubRepo: "https://github.com/Bonee94/Taylors-Weather-Application"
+        githubRepo: "https://github.com/Bonee94/Taylors-Weather-Application",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi quod dolorum dolorem sit exercitationem, quo optio incidunt, est modi nulla, libero ratione fuga? Tempora quod enim earum rem modi."
     },
     {
         id: 6,
@@ -46,7 +51,8 @@ export default function projectsArr() {
         imgSrc: "horiseon",
         imgAlt: "Horiseon Application",
         projTitle: "Horiseon Webpage",
-        githubRepo: "https://github.com/Bonee94/Module-1-Challenge"
+        githubRepo: "https://github.com/Bonee94/Module-1-Challenge",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi quod dolorum dolorem sit exercitationem, quo optio incidunt, est modi nulla, libero ratione fuga? Tempora quod enim earum rem modi."
     },
     
 ];
