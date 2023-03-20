@@ -8,12 +8,16 @@ export default function Projects({
   imgSrc,
   imgAlt,
   projTitle,
+  info
 }) {
   return (
     <div className="work-tiles tiles">
       <a href={href}>
-        <Images imgSrc={imgSrc} imgAlt={imgAlt} />
+        <div className="img-wrapper">
+          <Images imgSrc={imgSrc} imgAlt={imgAlt} />
+        </div>
       </a>
+      <p className="info-p">{info}</p>
       <div className="project-titles">
         <h2>
           <a href={href} className="project-title-link">
