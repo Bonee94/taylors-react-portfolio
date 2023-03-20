@@ -19,7 +19,7 @@
     text-shadow: 5px 5px 5px #0c0c0cfa;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 568px) {
     .page-container {
         margin: 10px;
     }

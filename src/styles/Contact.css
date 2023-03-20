@@ -103,7 +103,7 @@ a {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 568px) {
   .form-box {
     display: flex;
     flex-direction: column;

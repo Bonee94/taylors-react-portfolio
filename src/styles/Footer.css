@@ -75,7 +75,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 568px) {
   .fa {
     font-size: 40px;
     margin: 0 20px 20px;

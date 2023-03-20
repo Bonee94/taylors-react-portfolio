@@ -27,7 +27,7 @@
   height: 10vw;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 568px) {
   .my-name-hdr {
     font-size: 2.2rem;
     margin: 1vh 0 0 0;

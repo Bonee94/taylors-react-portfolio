@@ -14,7 +14,7 @@
     margin: 0 80px 10px 0 ;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 568px) {
     .profile-section img {
         float: left;
         margin: 0 40px 10px 0 ;
