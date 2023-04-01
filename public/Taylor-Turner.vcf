@@ -2,7 +2,7 @@ BEGIN:VCARD
 VERSION:3.0
 FN:Taylor Turner
 N:Turner;Taylor
-TEL;TYPE=cell;tel:210-363-521
+TEL;TYPE=cell;tel:210-363-5213
 TITLE:Web Developer
 EMAIL;TYPE=work:bonee94@yahoo.com
 URL:https://bonee94.github.io/taylors-react-portfolio/
