@@ -6,6 +6,10 @@ const Images = ({ imgSrc, imgAlt }) => {
       return (
         <img src={require("../assets/images/national-park-locator.PNG")} alt={imgAlt} />
       );
+    case "Rappor":
+      return (
+        <img src={require("../assets/images/Rappor-app.PNG")} alt={imgAlt} />
+      );
     case "techBlog":
       return (
         <img src={require("../assets/images/tech-blog.PNG")} alt={imgAlt} />

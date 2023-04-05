@@ -2,6 +2,15 @@ export default function projectsArr() {
     const projectsArr = [
     {
         id: 1,
+        href: "https://rappor-social-media.herokuapp.com/",
+        imgSrc: "Rappor",
+        imgAlt: "Rappor Social Media Logo",
+        projTitle: "Rappor",
+        githubRepo: "https://github.com/Carter-Schmitz/Rappor",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi quod dolorum dolorem sit exercitationem, quo optio incidunt, est modi nulla, libero ratione fuga? Tempora quod enim earum rem modi."
+    },
+    {
+        id: 2,
         href: "https://i-am-j-a-t-e.herokuapp.com/",
         imgSrc: "JATE",
         imgAlt: "just another text editor",
@@ -10,7 +19,7 @@ export default function projectsArr() {
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi quod dolorum dolorem sit exercitationem, quo optio incidunt, est modi nulla, libero ratione fuga? Tempora quod enim earum rem modi."
     },
     {
-        id: 3,
+        id: 4,
         href: "https://spangled-banner-realty.herokuapp.com/",
         imgSrc: "sbRealty",
         imgAlt: "SB Realty Project",
@@ -19,7 +28,7 @@ export default function projectsArr() {
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi quod dolorum dolorem sit exercitationem, quo optio incidunt, est modi nulla, libero ratione fuga? Tempora quod enim earum rem modi."
     },
     {
-        id: 4,
+        id: 5,
         href: "https://rdalby2002.github.io/national-park-locator/",
         imgSrc: "parkLocator",
         imgAlt: "National Park Locator Project image",
@@ -28,7 +37,7 @@ export default function projectsArr() {
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi quod dolorum dolorem sit exercitationem, quo optio incidunt, est modi nulla, libero ratione fuga? Tempora quod enim earum rem modi."
     },
     {
-        id: 2,
+        id: 3,
         href: "https://hidden-fjord-74981.herokuapp.com/",
         imgSrc: "techBlog",
         imgAlt: "tech blog project image",
@@ -37,7 +46,7 @@ export default function projectsArr() {
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi quod dolorum dolorem sit exercitationem, quo optio incidunt, est modi nulla, libero ratione fuga? Tempora quod enim earum rem modi."
     },
     {
-        id: 5,
+        id: 6,
         href: "https://bonee94.github.io/Taylors-Weather-Application/",
         imgSrc: "weatherApp",
         imgAlt: "weather application project image",
@@ -46,7 +55,7 @@ export default function projectsArr() {
         info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi quod dolorum dolorem sit exercitationem, quo optio incidunt, est modi nulla, libero ratione fuga? Tempora quod enim earum rem modi."
     },
     {
-        id: 6,
+        id: 7,
         href: "https://bonee94.github.io/Module-1-Challenge/",
         imgSrc: "horiseon",
         imgAlt: "Horiseon Application",
