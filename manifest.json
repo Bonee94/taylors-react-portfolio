@@ -1,7 +1,12 @@
 {
   "short_name": "Taylor's Portfolio",
   "name": "Taylor's Portfolio",
-  "icons": [],
+  "icons": [
+    {
+      "src": "taylor-letter.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"    }
+  ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

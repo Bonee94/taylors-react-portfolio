@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/taylors-react-portfolio/static/css/main.171d977e.css",
-    "main.js": "/taylors-react-portfolio/static/js/main.4bfc99b3.js",
-    "static/media/Horiseon.png": "/taylors-react-portfolio/static/media/Horiseon.e285fea5ca23c2216b74.png",
-    "static/media/sb-realty.PNG": "/taylors-react-portfolio/static/media/sb-realty.55c29047f5d207fa462e.PNG",
-    "static/media/Taylor-profile-pic.png": "/taylors-react-portfolio/static/media/Taylor-profile-pic.42835d979fc2293f65ba.png",
-    "static/media/Screenshot 2022-10-21 223902.png": "/taylors-react-portfolio/static/media/Screenshot 2022-10-21 223902.c00ff546536e20e8c429.png",
-    "static/media/weather-app.png": "/taylors-react-portfolio/static/media/weather-app.12ad8927563fd540576e.png",
-    "static/media/Rappor-app.PNG": "/taylors-react-portfolio/static/media/Rappor-app.9bbf094864f43c9132f0.PNG",
-    "static/media/national-park-locator.PNG": "/taylors-react-portfolio/static/media/national-park-locator.92f54b12ed4a25356bac.PNG",
-    "static/media/tech-blog.PNG": "/taylors-react-portfolio/static/media/tech-blog.2c89fe7e7ae183cda954.PNG",
-    "static/media/jate-app.PNG": "/taylors-react-portfolio/static/media/jate-app.4113ca6cc77962896696.PNG",
-    "index.html": "/taylors-react-portfolio/index.html",
-    "main.171d977e.css.map": "/taylors-react-portfolio/static/css/main.171d977e.css.map",
-    "main.4bfc99b3.js.map": "/taylors-react-portfolio/static/js/main.4bfc99b3.js.map"
+    "main.css": "/static/css/main.2b260310.css",
+    "main.js": "/static/js/main.6b6298dc.js",
+    "static/media/Horiseon.png": "/static/media/Horiseon.e285fea5ca23c2216b74.png",
+    "static/media/sb-realty.PNG": "/static/media/sb-realty.55c29047f5d207fa462e.PNG",
+    "static/media/Taylor-profile-pic.png": "/static/media/Taylor-profile-pic.42835d979fc2293f65ba.png",
+    "static/media/Screenshot 2022-10-21 223902.png": "/static/media/Screenshot 2022-10-21 223902.c00ff546536e20e8c429.png",
+    "static/media/weather-app.png": "/static/media/weather-app.12ad8927563fd540576e.png",
+    "static/media/Rappor-app.PNG": "/static/media/Rappor-app.9bbf094864f43c9132f0.PNG",
+    "static/media/national-park-locator.PNG": "/static/media/national-park-locator.92f54b12ed4a25356bac.PNG",
+    "static/media/tech-blog.PNG": "/static/media/tech-blog.2c89fe7e7ae183cda954.PNG",
+    "static/media/jate-app.PNG": "/static/media/jate-app.4113ca6cc77962896696.PNG",
+    "index.html": "/index.html",
+    "main.2b260310.css.map": "/static/css/main.2b260310.css.map",
+    "main.6b6298dc.js.map": "/static/js/main.6b6298dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.171d977e.css",
-    "static/js/main.4bfc99b3.js"
+    "static/css/main.2b260310.css",
+    "static/js/main.6b6298dc.js"
   ]
 }
