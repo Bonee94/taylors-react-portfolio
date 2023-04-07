@@ -13,6 +13,9 @@ setDefaultProps({
 });
 
 const [sendMessage, {error}] = useMutation(SEND_MESSAGE)
+if (error) {
+  console.log("Send message err:",error)
+}
 
  
 const sendContactEmail = ((event) => {
