@@ -23,9 +23,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "install": "cd server && npm i && cd ../client && npm i",
-    "start": "cd server && start",
-    "build": "cd client && build",
-    "test": "cd client && test",
+    "start": "cd server && npm run start",
+    "build": "cd client && npm run build",
+    "test": "cd client && npm run test",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "eject": "react-scripts eject"
   },
