@@ -21,7 +21,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d client/build",
     "install": "cd server && npm i && cd ../client && npm i",
     "start": "cd server && npm run start",
     "build": "cd client && npm run build",

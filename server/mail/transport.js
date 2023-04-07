@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 //const {user, pass} =
-const host = "smtp.ethereal.email";
+const host = "smtp.gmail.com";
 
 module.exports = async function getTransport() {
 
