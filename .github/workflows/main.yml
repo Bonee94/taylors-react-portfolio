@@ -1,22 +1,42 @@
-name: Enviroment
+name: Environment
 
 on: push
 
 jobs:
   build-and-deploy:
         runs-on: ubuntu-latest
+        
+        permissions:
+          deployments: write
+        
         steps:
         - name: Checkout
           uses: actions/checkout@v1
-
-        - name: Build
+          
+        - name: Identify
+          env: 
+            MY_EMAIL: bonee94@yahoo.com
+            MY_NAME: Bonee94
+            MY_PASS: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          
           run: |
+            git config --global user.name $MY_NAME
+            git config --global user.email $MY_EMAIL
+            git remote set-url origin https://$MY_NAME@github.com/Bonee94/taylors-react-portfolio.git
+                                  
+        - name: Build
+          run:
             npm install
-            npm run deploy
+            
+        - name: Deploy
           env:
-            REACT_APP_EMAIL_USER: ${{ secrets.REACT_APP_EMAIL_USER }}
-            REACT_APP_CLIENT_ID: ${{ secrets.REACT_APP_CLIENT_ID }}
-            REACT_APP_CLIENT_SECRET: ${{ secrets.REACT_APP_CLIENT_SECRET }}
-            REACT_APP_REFRESH_TOKEN: ${{ secrets.REACT_APP_REFRESH_TOKEN }}
-            REACT_APP_ACCESS_TOKEN: ${{ secrets.REACT_APP_ACCESS_TOKEN }}
-
+              REACT_APP_EMAIL_USER: ${{ secrets.REACT_APP_EMAIL_USER }}
+              REACT_APP_CLIENT_ID: ${{ secrets.REACT_APP_CLIENT_ID }}
+              REACT_APP_CLIENT_SECRET: ${{ secrets.REACT_APP_CLIENT_SECRET }}
+              REACT_APP_REFRESH_TOKEN: ${{ secrets.REACT_APP_REFRESH_TOKEN }}
+              REACT_APP_ACCESS_TOKEN: ${{ secrets.REACT_APP_ACCESS_TOKEN }}
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              
+          run: |
+            npm run deploy
+         
