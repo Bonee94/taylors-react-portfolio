@@ -26,7 +26,7 @@ jobs:
             
         - name: Identify
           run:  |
-              git config user.name "Taylor Turner"
+              git config user.name "bonee94"
               git config user.email "bonee94@yahoo.com"
           
         - name: Deploy
