@@ -22,7 +22,7 @@ jobs:
           run: |
             git config --global user.name $MY_NAME
             git config --global user.email $MY_EMAIL
-            git remote set-url origin https://$MY_NAME:$MY_PASS%40@github.com/Bonee94/taylors-react-portfolio.git
+            git remote set-url origin https://github.com/Bonee94/taylors-react-portfolio.git
                                   
         - name: Build
           run:
@@ -38,4 +38,6 @@ jobs:
               
           run: |
             npm run deploy
+            with: 
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          
