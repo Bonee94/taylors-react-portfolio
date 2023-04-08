@@ -17,6 +17,7 @@ jobs:
           run: |
             git config --global user.name Bonee94
             git config --global user.email bonee94@yahoo.com
+            git config --global credential.helper wincred
 
         - name: Build
           run:
