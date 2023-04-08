@@ -19,8 +19,8 @@ const resolvers = {
             to: "taylor.portfolio.email@gmail.com",
             subject: `Portfolio Test`,
             html: `<h1>From: ${fromInput}</h1>
-            <h1>Email: ${emailInput}</h1>
-             <h1>Message:</h1>
+            <h2>Email: ${emailInput}</h2>
+             <h2>Message:</h2>
             <p>${messageInput}</p>
             `
           }).then(info => {

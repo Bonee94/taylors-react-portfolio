@@ -1,6 +1,6 @@
 {
   "name": "taylors-portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "proxy": "http://localhost:3001",
   "private": true,
   "homepage": "https://Bonee94.github.io/taylors-react-portfolio",
@@ -55,5 +55,9 @@
   ],
   "devDependencies": {
     "react-app-rewired": "^2.2.1"
+  },
+  "engines" : { 
+    "npm" : ">=9.0.0 <9.2.0",
+    "node" : ">=18.0.0 <18.12.1"
   }
 }
