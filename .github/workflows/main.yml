@@ -3,20 +3,28 @@ name: Enviroment
 on: push
 
 jobs:
-  build:
+  build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout
+          uses: actions/checkout@v1
 
-    runs-on: ubuntu-latest
+        - name: Build
+          run: |
+            npm install
+            npm run-script build
+          env:
+            REACT_APP_EMAIL_USER: ${{ secrets.REACT_APP_EMAIL_USER }}
+            REACT_APP_CLIENT_ID: ${{ secrets.REACT_APP_CLIENT_ID }}
+            REACT_APP_CLIENT_SECRET: ${{ secrets.REACT_APP_CLIENT_SECRET }}
+            REACT_APP_REFRESH_TOKEN: ${{ secrets.REACT_APP_REFRESH_TOKEN }}
+            REACT_APP_ACCESS_TOKEN: ${{ secrets.REACT_APP_ACCESS_TOKEN }}
 
-    steps:
-    
-    - name: Build
-      run: |
-        npm install
-        npm run deploy
-      env:
-        REACT_APP_EMAIL_USER: ${{ secrets.REACT_APP_EMAIL_USER }}
-        REACT_APP_CLIENT_ID: ${{ secrets.REACT_APP_CLIENT_ID }}
-        REACT_APP_CLIENT_SECRET: ${{ secrets.REACT_APP_CLIENT_SECRET }}
-        REACT_APP_REFRESH_TOKEN: ${{ secrets.REACT_APP_REFRESH_TOKEN }}
-        REACT_APP_ACCESS_TOKEN: ${{ secrets.REACT_APP_ACCESS_TOKEN }}
-  
+
+        - name: Deploy
+          uses: JamesIves/github-pages-deploy-action@releases/v3
+          with:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_KEY }}
+            BRANCH: gh-pages
+            FOLDER: dist
+ 
