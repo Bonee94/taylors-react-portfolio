@@ -1,10 +1,6 @@
 const nodemailer = require("nodemailer");
 require('dotenv').config()
 
-console.log(process.env)
-
-
-//const {user, pass} = 
 const host = "smtp.gmail.com";
 
 module.exports = async function getTransport() {

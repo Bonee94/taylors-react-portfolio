@@ -16,6 +16,8 @@ const server = new ApolloServer({
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+console.log(path.join(__dirname, "../client/build"))
+
 app.use(express.static(path.join(__dirname, "../client/build")));
 
 app.get("/", (req, res) => {
