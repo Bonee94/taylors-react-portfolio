@@ -21,7 +21,7 @@ jobs:
           run: |
             git config --global user.name $MY_NAME
             git config --global user.email $MY_EMAIL
-            git remote set-url origin https://$MY_NAME@github.com/Bonee94/taylors-react-portfolio.git
+            git remote set-url origin https://$MY_NAME:${{ secrets.MY_PASSWORD }}%40@github.com/Bonee94/taylors-react-portfolio.git
                        
         - name: Build
           run:
