@@ -25,10 +25,11 @@ const resolvers = {
             `
           }).then(info => {
             console.log("Message Id:", info.messageId); 
-            console.log("Url:", nodemailer.getTestMessageUrl(info)); 
+            console.log("Message Sent"); 
           })
         } catch (err) {
           console.log(err);
+          return { message: "I'm sorry...something went wrong", error: true }
         }
 
         return { message: "Thank for contacting me! I will get back to you soon.", error: false };
