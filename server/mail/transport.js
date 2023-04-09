@@ -4,6 +4,7 @@ require('dotenv').config()
 const host = "smtp.gmail.com";
 
 console.log("Email User ",process.env.REACT_APP_EMAIL_USER)
+console.log("Client Id ",process.env.REACT_APP_CLIENT_ID)
 
 module.exports = async function getTransport() {
   let transport = nodemailer.createTransport({
