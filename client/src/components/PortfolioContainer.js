@@ -6,10 +6,12 @@ import '../styles/PortfolioContainer.css'
 import Footer from './Footer';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+import Modal from './Modal';
 
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('About');
+  const [currentPage, setCurrentPage] = useState('Contact');
+  const [modalOn, setModalOn] = useState(false);
 
   useEffect(() => {
       window.scrollTo(0, 0);
@@ -24,7 +26,7 @@ export default function PortfolioContainer() {
       return <Portfolio />;
     }
     if (currentPage === 'Contact') {
-      return <Contact />;
+      return <Contact setModalOn={setModalOn}/>;
     }
     if (currentPage === 'Resume') {
       return <Resume />;
@@ -32,12 +34,13 @@ export default function PortfolioContainer() {
   };
 
   const handlePageChange = async (page) => {
-    await setCurrentPage('')
+    setCurrentPage('')
     setCurrentPage(page)
   };
 
   return (
     <div>
+      {modalOn ? <Modal/> : null}
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
       <Footer/>

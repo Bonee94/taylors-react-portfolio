@@ -5,7 +5,7 @@ import OnVisible, { setDefaultProps } from 'react-on-visible';
 import { SEND_MESSAGE } from "../../utils/mutations";
 import { useMutation } from "@apollo/client";
 
-export default function Contact() {
+export default function Contact({setModalOn}) {
 setDefaultProps({
     bounce: true,
     visibleClassName: 'qr-code-anim-small',
@@ -17,6 +17,14 @@ if (error) {
   console.log("Send message err:",error)
 }
 
+const startModal = () => {
+  setModalOn(true);
+
+  setTimeout(() => {
+    setModalOn(false)
+  }, 5500);
+}
+
  
 const sendContactEmail = ((event) => {
   event.preventDefault()
@@ -25,10 +33,12 @@ const sendContactEmail = ((event) => {
     sendMessage({
       variables: {
         emailInput: emailForm, 
-        messageInput: messageForm, 
+        messageInput: messageForm,
         fromInput: nameForm
-      }
+      } 
     })
+
+    startModal() 
   }
  return
 })
@@ -83,7 +93,6 @@ const sendContactEmail = ((event) => {
         return
       }
 
-      console.log(event.target.value)
       setEmailReq("") 
       setEmailForm(event.target.value)
     }

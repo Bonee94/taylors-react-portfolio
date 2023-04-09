@@ -2,6 +2,8 @@ import React from "react";
 import "../styles/Footer.css";
 
 function Footer({ currentPage, handlePageChange }) {
+  let copy ='\u00a9';
+
   return (
     <footer>
       <div className="icons-container">
@@ -24,6 +26,7 @@ function Footer({ currentPage, handlePageChange }) {
           <i className="fa fa-facebook"></i>
         </a>
       </div>
+      <h3>{copy} Taylor Turner 2023 | All rights reserved</h3>
     </footer>
   );
 }

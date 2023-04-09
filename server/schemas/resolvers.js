@@ -17,7 +17,7 @@ const resolvers = {
           transport.sendMail({
             from: "Portfolio <TaylorTurner@portfolio.com>",
             to: "taylor.portfolio.email@gmail.com",
-            subject: `Portfolio Test`,
+            subject: `Portfolio Contact`,
             html: `<h1>From: ${fromInput}</h1>
             <h2>Email: ${emailInput}</h2>
              <h2>Message:</h2>
