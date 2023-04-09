@@ -1,5 +1,6 @@
 .container {
   z-index: 1;
+  margin-top: -40px;
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -510,3 +511,22 @@
       filter: blur(0px);
     }
   }
+
+  @media screen and (max-width: 568px) {
+    .container {
+        margin-top: -10px;
+    }
+
+    .modal h2{
+      font-size: 16px;
+    }
+
+    .modal h1 {
+      font-size: 20px;
+    }
+
+    .modal p {
+      text-align: center;
+      width: 100%;
+    }
+}
