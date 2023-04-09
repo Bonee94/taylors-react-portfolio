@@ -4,8 +4,13 @@ import qrCode from "../../assets/images/contact-qr-code.png";
 import OnVisible, { setDefaultProps } from 'react-on-visible';
 import { SEND_MESSAGE } from "../../utils/mutations";
 import { useMutation } from "@apollo/client";
+import Modal from '../Modal';
 
-export default function Contact({setModalOn}) {
+
+export default function Contact() {
+  const [modalOn, setModalOn] = useState(false);
+
+
 setDefaultProps({
     bounce: true,
     visibleClassName: 'qr-code-anim-small',
@@ -13,9 +18,7 @@ setDefaultProps({
 });
 
 const [sendMessage, {error}] = useMutation(SEND_MESSAGE)
-if (error) {
-  console.log("Send message err:",error)
-}
+
 
 const startModal = () => {
   setModalOn(true);
@@ -24,7 +27,6 @@ const startModal = () => {
     setModalOn(false)
   }, 5500);
 }
-
  
 const sendContactEmail = ((event) => {
   event.preventDefault()
@@ -40,6 +42,13 @@ const sendContactEmail = ((event) => {
 
     startModal() 
   }
+
+  if (error) {
+    console.log("Send message err:",error)
+     
+    return <h2>I'm sorry...something went wrong.</h2>
+  }
+
  return
 })
 
@@ -120,6 +129,8 @@ const sendContactEmail = ((event) => {
   };
 
   return (
+    <div>
+      {modalOn ? <Modal/> : null}
     <div className="page-container">
       <div className="page-card">
         <h1>Contact Me</h1>
@@ -192,6 +203,7 @@ const sendContactEmail = ((event) => {
           <h3>Scan or click for my info</h3>
         </div>
       </div>
+    </div>
     </div>
   );
 }
