@@ -10,7 +10,7 @@ import Modal from './Modal';
 
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Contact');
+  const [currentPage, setCurrentPage] = useState('About');
   const [modalOn, setModalOn] = useState(false);
 
   useEffect(() => {
