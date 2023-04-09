@@ -1,0 +1,695 @@
+.container {
+  z-index: 1;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(
+    rgb(32, 44, 37, 0.6) 30%,
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  color: #fff;
+  background-color: #4c6355;
+  height: fit-content;
+  width: fit-content;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  border: 4px solid rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px #000, inset 0px 0px 6px 6px #000;
+  animation: animateBG 1s, animateTop 1s;
+}
+
+@keyframes animateBG {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes animateTop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+.shimmer-anim-1 span:nth-of-type(1) {
+  animation: blackblur 1s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(2) {
+  animation: blackblur 1s 0.1s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(3) {
+  animation: blackblur 1s 0.15s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(4) {
+  animation: blackblur 1s 0.2s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(5) {
+  animation: blackblur 1s 0.25s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(6) {
+  animation: blackblur 1s 0.3s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(7) {
+  animation: blackblur 1s 0.35s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(8) {
+  animation: blackblur 1s 0.4s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(9) {
+  animation: blackblur 1s 0.45s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(10) {
+  animation: blackblur 1s 0.5s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(11) {
+  animation: blackblur 1s 0.55s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(12) {
+  animation: blackblur 1s 0.6s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(13) {
+  animation: blackblur 1s 0.65s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(14) {
+  animation: blackblur 1s 0.7s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(15) {
+  animation: blackblur 1s 0.75s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(16) {
+  animation: blackblur 1s 0.8s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(17) {
+  animation: blackblur 1s 0.85s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(18) {
+  animation: blackblur 1s 0.9s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(19) {
+  animation: blackblur 1s 0.95s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(20) {
+  animation: blackblur 1s 1s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(21) {
+  animation: blackblur 1s 1.05s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(22) {
+  animation: blackblur 1s 1.1s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(23) {
+  animation: blackblur 1s 1.15s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(24) {
+  animation: blackblur 1s 1.2s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(25) {
+  animation: blackblur 1s 1.25s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(26) {
+  animation: blackblur 1s 1.3s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(27) {
+  animation: blackblur 1s 1.35s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-1 span:nth-of-type(28) {
+  animation: blackblur 1s 1.4s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+
+
+.shimmer-anim-1 span:nth-of-type(1) {
+    -webkit-animation: blackblur 1s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(2) {
+    -webkit-animation: blackblur 1s 0.1s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(3) {
+    -webkit-animation: blackblur 1s 0.15s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(4) {
+    -webkit-animation: blackblur 1s 0.2s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(5) {
+    -webkit-animation: blackblur 1s 0.25s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(6) {
+    -webkit-animation: blackblur 1s 0.3s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(7) {
+    -webkit-animation: blackblur 1s 0.35s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(8) {
+    -webkit-animation: blackblur 1s 0.4s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(9) {
+    -webkit-animation: blackblur 1s 0.45s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(10) {
+    -webkit-animation: blackblur 1s 0.5s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(11) {
+    -webkit-animation: blackblur 1s 0.55s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(12) {
+    -webkit-animation: blackblur 1s 0.6s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(13) {
+    -webkit-animation: blackblur 1s 0.65s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(14) {
+    -webkit-animation: blackblur 1s 0.7s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(15) {
+    -webkit-animation: blackblur 1s 0.75s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(16) {
+    -webkit-animation: blackblur 1s 0.8s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(17) {
+    -webkit-animation: blackblur 1s 0.85s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(18) {
+    -webkit-animation: blackblur 1s 0.9s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(19) {
+    -webkit-animation: blackblur 1s 0.95s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(20) {
+    -webkit-animation: blackblur 1s 1s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(21) {
+    -webkit-animation: blackblur 1s 1.05s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(22) {
+    -webkit-animation: blackblur 1s 1.1s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(23) {
+    -webkit-animation: blackblur 1s 1.15s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(24) {
+    -webkit-animation: blackblur 1s 1.2s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(25) {
+    -webkit-animation: blackblur 1s 1.25s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(26) {
+    -webkit-animation: blackblur 1s 1.3s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(27) {
+    -webkit-animation: blackblur 1s 1.35s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-1 span:nth-of-type(28) {
+    -webkit-animation: blackblur 1s 1.4s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+
+
+/* This is for the second sentence */
+.shimmer-anim-2 span:nth-of-type(1) {
+  animation: blackblur 1s 1.4s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(2) {
+  animation: blackblur 1s 1.45s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(3) {
+  animation: blackblur 1s 1.50s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(4) {
+  animation: blackblur 1s 1.55s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(5) {
+  animation: blackblur 1s 1.60s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(6) {
+  animation: blackblur 1s 1.65s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(7) {
+  animation: blackblur 1s 1.7s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(8) {
+  animation: blackblur 1s 1.75s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(9) {
+  animation: blackblur 1s 1.8s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(10) {
+  animation: blackblur 1s 1.85s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(11) {
+  animation: blackblur 1s 1.9s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(12) {
+  animation: blackblur 1s 1.95s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(13) {
+  animation: blackblur 1s 2s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(14) {
+  animation: blackblur 1s 2.05s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(15) {
+  animation: blackblur 1s 2.1s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(16) {
+  animation: blackblur 1s 2.15s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(17) {
+  animation: blackblur 1s 2.2s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(18) {
+  animation: blackblur 1s 2.25s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(19) {
+  animation: blackblur 1s 2.3s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(20) {
+  animation: blackblur 1s 2.35s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(21) {
+  animation: blackblur 1s 2.4s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(22) {
+  animation: blackblur 1s 2.45s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(23) {
+  animation: blackblur 1s 2.5s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(24) {
+  animation: blackblur 1s 2.55s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(25) {
+  animation: blackblur 1s 2.6s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(26) {
+  animation: blackblur 1s 2.65s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(27) {
+  animation: blackblur 1s 2.7s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(28) {
+  animation: blackblur 1s 2.75s 1;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+.shimmer-anim-2 span:nth-of-type(29) {
+    animation: blackblur 1s 2.8s 1;
+    animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(30) {
+    animation: blackblur 1s 2.85s 1;
+    animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(31) {
+    animation: blackblur 1s 2.9s 1;
+    animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(32) {
+    animation: blackblur 1s 2.95s 1;
+    animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(33) {
+    animation: blackblur 1s 3s 1;
+    animation-fill-mode: forwards;
+    color: transparent;
+  }
+
+@keyframes blackblur {
+  0% {
+    text-shadow: 0;
+    color: transparent;
+    filter: blur(30px);
+  }
+  100% {
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    filter: blur(0px);
+  }
+}
+
+
+.shimmer-anim-2 span:nth-of-type(1) {
+    -webkit-animation: blackblur 1s 1.4s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(2) {
+    -webkit-animation: blackblur 1s 1.45s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(3) {
+    -webkit-animation: blackblur 1s 1.50s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(4) {
+    -webkit-animation: blackblur 1s 1.55s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(5) {
+    -webkit-animation: blackblur 1s 1.60s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(6) {
+    -webkit-animation: blackblur 1s 1.65s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(7) {
+    -webkit-animation: blackblur 1s 1.7s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(8) {
+    -webkit-animation: blackblur 1s 1.75s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(9) {
+    -webkit-animation: blackblur 1s 1.8s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(10) {
+    -webkit-animation: blackblur 1s 1.85s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(11) {
+    -webkit-animation: blackblur 1s 1.9s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(12) {
+    -webkit-animation: blackblur 1s 1.95s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(13) {
+    -webkit-animation: blackblur 1s 2s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(14) {
+    -webkit-animation: blackblur 1s 2.05s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(15) {
+    -webkit-animation: blackblur 1s 2.1s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(16) {
+    -webkit-animation: blackblur 1s 2.15s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(17) {
+    -webkit-animation: blackblur 1s 2.2s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(18) {
+    -webkit-animation: blackblur 1s 2.25s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(19) {
+    -webkit-animation: blackblur 1s 2.3s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(20) {
+    -webkit-animation: blackblur 1s 2.35s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(21) {
+    -webkit-animation: blackblur 1s 2.4s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(22) {
+    -webkit-animation: blackblur 1s 2.45s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(23) {
+    -webkit-animation: blackblur 1s 2.5s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(24) {
+    -webkit-animation: blackblur 1s 2.55s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(25) {
+    -webkit-animation: blackblur 1s 2.6s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(26) {
+    -webkit-animation: blackblur 1s 2.65s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(27) {
+    -webkit-animation: blackblur 1s 2.7s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(28) {
+    -webkit-animation: blackblur 1s 2.75s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(29) {
+    -webkit-animation: blackblur 1s 2.8s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(30) {
+    -webkit-animation: blackblur 1s 2.85s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(31) {
+    -webkit-animation: blackblur 1s 2.9s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(32) {
+    -webkit-animation: blackblur 1s 2.95s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  .shimmer-anim-2 span:nth-of-type(33) {
+    -webkit-animation: blackblur 1s 3s 1;
+    -webkit-animation-fill-mode: forwards;
+    color: transparent;
+  }
+  
+  @-webkit-keyframes blackblur {
+    0% {
+      text-shadow: 0;
+      color: transparent;
+      filter: blur(30px);
+    }
+    100% {
+      text-shadow: 5px 5px 10px rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      filter: blur(0px);
+    }
+  }
