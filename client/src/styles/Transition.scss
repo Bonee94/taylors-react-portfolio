@@ -1,0 +1,50 @@
+$white: #fff;
+
+.overlay {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    &.show {
+        .bar {
+            transform: scale(1, 1)
+                       translate3d(0,0,0);
+            transform-origin: 100% 100%;
+        }
+
+    }
+
+    .bar {
+        position: absolute;
+        width: 10.1vw;
+        background: $white;
+        bottom: 0;
+        top: 0;
+        transform: scale(-1, 0)
+                   translate3d(0,0,0);
+        transform-origin: 0 0;
+        transition: transform .5s ease-in-out;        
+        &:first-of-type {
+            border-left: none;
+        }
+        
+        $light: $white;
+        $dark: mix(black, $white, 5%);        
+        @for $x from 1 through 10 {
+            &:nth-of-type(#{$x}) {
+                left: ($x - 1) * 10vw;
+                background: linear-gradient(to top, $light 0%, $dark 100%);
+                transition-delay: 0.05s * $x;
+            }
+            
+            $light: $dark;
+            $dark: mix(black, $white, ($x * 5%));
+        }
+
+    
+    }
+    
+}
