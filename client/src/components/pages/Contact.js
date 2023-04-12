@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/Contact.css";
 import qrCode from "../../assets/images/contact-qr-code.png";
 import OnVisible, { setDefaultProps } from 'react-on-visible';
 import { SEND_MESSAGE } from "../../utils/mutations";
 import { useMutation } from "@apollo/client";
 import Modal from '../Modal';
+import Transition from '../Transition';
 
-
-export default function Contact() {
+export default function Contact({transition, setTransition}) {
   const [modalOn, setModalOn] = useState(false);
 
+  useEffect(() => {
+    setTransition(false)
+  })
 
 setDefaultProps({
     bounce: true,
@@ -133,6 +136,7 @@ const sendContactEmail = ((event) => {
       {modalOn ? <Modal/> : null}
     <div className="page-container">
       <div className="page-card">
+      <Transition transition={transition}/>
         <h1>Contact Me</h1>
         <div className="contact-flexbox">
           <section className="form-box">

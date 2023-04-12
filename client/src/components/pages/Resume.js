@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../styles/Resume.css';
+import Transition from '../Transition';
 
-export default function Resume() {
+export default function Resume({transition, setTransition}) {
   //For local development of qr code
   // const site = window.location.href;
   // const url = site.split('#')[0]+'/Taylor-Turner.vcf';
+
+  useEffect(() => {
+    setTransition(false)
+  })
 
   //for deployed qr code
   const url =
@@ -13,6 +18,7 @@ export default function Resume() {
   return (
     <div className='page-container'>
       <div className='page-card'>
+      <Transition transition={transition}/> 
         <h1>Resume</h1>
         <h2 id='resume-download-hdr'>Click to download my <button id="resume-submit" onClick={() => {
             fetch(url)
