@@ -37,7 +37,8 @@ export default function Modal() {
                     <span>e</span>
                     <span>!</span>
                 </h1>
-                <p><h2 className="shimmer-anim-2">
+                <br/>
+                <h2 className="shimmer-anim-2">
                     <span>I</span>
                     <span> </span>
                     <span>w</span>
@@ -71,7 +72,7 @@ export default function Modal() {
                     <span>.</span>
                     <span>.</span>
                     <span>.</span>
-                </h2></p>
+                </h2>
             </div>  
         </div>  
     </div>
