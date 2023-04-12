@@ -10,6 +10,7 @@ import Resume from './pages/Resume';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
+  const [transition, setTransition] = useState(Boolean)
 
   useEffect(() => {
       window.scrollTo(0, 0);
@@ -18,16 +19,16 @@ export default function PortfolioContainer() {
   // this is checking the value of current page state and returning the proper page
   const renderPage = () => {
     if (currentPage === 'About') {
-      return <About />;
+      return <About setTransition={setTransition} transition={transition}/>;
     };
     if (currentPage === 'Portfolio') {
-      return <Portfolio />;
+      return <Portfolio setTransition={setTransition} transition={transition}/>;
     }
     if (currentPage === 'Contact') {
-      return <Contact/>;
+      return <Contact setTransition={setTransition} transition={transition}/>;
     }
     if (currentPage === 'Resume') {
-      return <Resume />;
+      return <Resume setTransition={setTransition} transition={transition}/>;
     }
   };
 
@@ -38,7 +39,7 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Header currentPage={currentPage} setTransition={setTransition} handlePageChange={handlePageChange} />
       {renderPage()}
       <Footer/>
     </div>
