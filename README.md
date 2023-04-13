@@ -14,8 +14,8 @@
 
 ## Links
 
-- [Deployed Portfolio Page](https://bonee94.github.io/taylors-react-portfolio/)
-- [Github Project Repo](https://github.com/Bonee94/Taylor-Employee-Tracker)
+- [Deployed Portfolio Page](https://taylor-turners-portfolio.herokuapp.com/)
+- [Github Project Repo](https://github.com/Bonee94/taylors-react-portfolio)
 
 ## User Story
 
