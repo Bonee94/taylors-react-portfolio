@@ -3,17 +3,13 @@ import '../../styles/Resume.css';
 import Transition from '../Transition';
 
 export default function Resume({transition, setTransition}) {
-  //For local development of qr code
-  // const site = window.location.href;
-  // const url = site.split('#')[0]+'/Taylor-Turner.vcf';
 
   useEffect(() => {
     setTransition(false)
   })
 
-  //for deployed qr code
   const url =
-    "https://bonee94.github.io/taylors-react-portfolio/resume.pdf";
+    "https://taylor-turners-portfolio.herokuapp.com/resume.pdf";
   
   return (
     <div className='page-container'>

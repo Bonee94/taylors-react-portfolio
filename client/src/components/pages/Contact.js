@@ -70,7 +70,7 @@ const sendContactEmail = ((event) => {
 
   //for deployed qr code
   const url =
-    "https://bonee94.github.io/taylors-react-portfolio/Taylor-Turner.vcf";
+    "https://taylor-turners-portfolio.herokuapp.com/Taylor-Turner.vcf";
 
   const changeReq = (event, caller) => {
     if (caller === "name") {

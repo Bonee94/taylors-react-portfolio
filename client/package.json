@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "proxy": "http://localhost:3001",
   "private": true,
-  "homepage": "https://Bonee94.github.io/taylors-react-portfolio",
+  "homepage": "/",
   "dependencies": {
     "@apollo/client": "^3.5.8",
     "@chakra-ui/react": "^2.5.4",
