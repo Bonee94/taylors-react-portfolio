@@ -20,7 +20,7 @@ export default function About({transition, setTransition}) {
           <p>
             Taylor is a recent coding boot camp graduate from UTSA who is eager to break into the tech industry. 
             He has a strong understanding of HTML, CSS JavaScript, Handlebars, SQL, MongoDB, React, Express and Node JS, enabling 
-            him o work with the full MERN Stack. With his drive and determination, Taylor is confident that he can quickly 
+            him to work with the full MERN Stack. With his drive and determination, Taylor is confident that he can quickly 
             become a valuable asset to any development team.
           </p>
           <p>
