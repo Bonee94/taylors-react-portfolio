@@ -64,13 +64,8 @@ const sendContactEmail = ((event) => {
   const [emailForm, setEmailForm] = useState("");
   const [messageForm, setMessageForm] = useState("");
 
-  //For local development of qr code
-  // const site = window.location.href;
-  // const url = site.split('#')[0]+'/Taylor-Turner.vcf';
-
-  //for deployed qr code
   const url =
-    "https://taylor-turners-portfolio.herokuapp.com/Taylor-Turner.vcf";
+    "/Taylor-Turner.vcf";
 
   const changeReq = (event, caller) => {
     if (caller === "name") {
@@ -196,7 +191,7 @@ const sendContactEmail = ((event) => {
         </div>
         <p>
           Or at: <br />
-          Email: <a href="mailto:Bonee94@yahoo.com">Bonee94@yahoo.com</a> <br />
+          Email: <a href="mailto:Turner.Taylor.BE@gmail.com">Turner.Taylor.BE@gmail.com</a> <br />
           Cell: <a href="tel:2103635213">210-363-5213</a>
         </p>
 

@@ -9,7 +9,7 @@ export default function Resume({transition, setTransition}) {
   })
 
   const url =
-    "https://taylor-turners-portfolio.herokuapp.com/resume.pdf";
+    "/Taylor-Turner-Resume.pdf";
   
   return (
     <div className='page-container'>
