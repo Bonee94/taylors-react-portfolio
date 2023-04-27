@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Footer.css";
+import LightDarkCandles from "./LightDarkCandles";
 
 function Footer({ currentPage, handlePageChange }) {
   let copy ='\u00a9';
@@ -25,6 +26,7 @@ function Footer({ currentPage, handlePageChange }) {
         >
           <i className="fa fa-facebook"></i>
         </a>
+        <LightDarkCandles/>
       </div>
       <h3>{copy} Taylor Turner 2023 | All rights reserved</h3>
     </footer>
