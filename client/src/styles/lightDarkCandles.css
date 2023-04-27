@@ -1,17 +1,22 @@
 .wrapper {
   transform: scale(.5, .5);
+  width: 100%;
+  height: 100%;
 }
 
-.floor {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 350px;
-  height: 5px;
-  background: #673C63;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 2px 5px #111;
-  z-index: 2;
+#mode {
+    position: absolute;
+    top: -60%;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 .candles {
@@ -37,7 +42,10 @@
   transform-origin: center right;
   transform: translate(60%, -25%);
   box-shadow: -2px 0px 0px #95c6f2 inset;
-  animation: expand-body 3s infinite linear;
+}
+
+.candle1Anim {
+  animation: expand-body 3s linear;
 }
 
 .candle1__stick, .candle2__stick {
@@ -90,7 +98,7 @@
   animation: blink-eyes 3s infinite linear;
 }
 
-.candle1__mouth {
+.candle1_mouthAnim {
   position: absolute;
   left: 40%;
   top: 20%;
@@ -99,18 +107,21 @@
   border-radius: 20px;
   background: #673C63;
   transform: translate(-50%, -50%);
-  animation: uff 3s infinite linear;
+  animation: uff 3s linear;
 }
 
 .candle__smoke-one {
   position: absolute;
   left: 30%;
   top: 50%;
-  width: 30px;
+  width: 0px;
   height: 3px;
   background: grey;
   transform: translate(-50%, -50%);
-  animation: move-left 3s infinite linear;
+}
+
+.candle__smoke-oneAnim {
+    animation: move-left 3s linear;
 }
 
 .candle__smoke-two {
@@ -138,7 +149,14 @@
   transform: translate(60%, -15%);
   transform-origin: center right;
   box-shadow: -2px 0px 0px #95c6f2 inset;
-  animation: shake-left 3s infinite linear;
+}
+
+.candle2Anim {
+    animation: shake-left 3s linear
+}
+
+.candle2AnimOn {
+    animation: shake-leftRev 3s reverse linear
 }
 
 .candle2__eyes-one {
@@ -152,8 +170,16 @@
   border-radius: 100%;
   background: #673C63;
   transform: translate(-80%, 0%);
-  animation: changeto-lower 3s infinite linear;
 }
+
+.candle2__eyes-oneAnim {
+    animation: changeto-lower 3s linear;
+}
+
+.candle2__eyes-oneAnimOn {
+    animation: changeto-lowerOn 3s reverse linear;
+}
+
 
 .candle2__eyes-two {
   position: absolute;
@@ -166,7 +192,14 @@
   border-radius: 100%;
   background: #673C63;
   transform: translate(-80%, 0%);
-  animation: changeto-greater 3s infinite linear;
+}
+
+.candle2__eyes-twoAnim {
+  animation: changeto-greater 3s linear;
+}
+
+.candle2__eyes-twoAnimOn {
+  animation: changeto-greaterOn 3s reverse linear;
 }
 
 .light__wave {
@@ -178,8 +211,11 @@
   border-radius: 100%;
   z-index: 0;
   transform: translate(-25%, -50%) scale(2.5, 2.5);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  animation: expand-light 3s infinite linear;
+  border: 0px solid rgba(255, 255, 255, 0.2);
+}
+
+.light__waveAnim {
+    animation: expand-light 3s infinite linear;
 }
 
 .candle2__fire {
@@ -187,13 +223,20 @@
   top: 50%;
   left: 40%;
   display: block;
-  width: 16px;
-  height: 20px;
+  width: 0px;
+  height: 0px;
   background-color: red;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   background: #FF9800;
   transform: translate(-50%, -50%);
-  animation: dance-fire 3s infinite linear;
+}
+
+.candle2__fireAnim {
+    animation: dance-fire 3s infinite linear;
+}
+
+.candle2__fireAnimOut {
+    animation: dance-fireOut 3s linear;
 }
 
 @keyframes blink-eyes {
@@ -271,7 +314,7 @@
   }
 }
 @keyframes move-left {
-  0%,59%,100% {
+  0%,59% {
     width: 0px;
     left: 40%;
   }
@@ -282,6 +325,9 @@
   68% {
     width: 0px;
     left: 20%;
+  }
+  100% {
+    width: 0px;
   }
 }
 @keyframes move-top {
@@ -333,11 +379,35 @@
     background: #fff;
     border-color: #673C63;
   }
-  91% {
+  92% {
+    left: 20%;
+    transform: scale(0.85, 1.15) translate(60%, -15%);
+  }
+  95% {
+    left: 20%;
+    transform: scale(1.05, 0.95) translate(60%, -15%);
+  }
+  97% {
+    left: 20%;
+    transform: scale(1, 1) translate(60%, -15%);
+  }
+}
+@keyframes shake-leftRev {
+  67% {
+    left: 20%;
+    transform: translate(60%, -15%);
+  }
+  75% {
+    left: 20%;
+    transform: scale(1.15, 0.85) translate(60%, -15%);
+    background: #fff;
+    border-color: #673C63;
+  }
+  100% {
     left: 20%;
     transform: scale(1.18, 0.82) translate(60%, -10%);
-    background: #F44336;
-    border-color: #F44336;
+    background: #a11910;
+    border-color: #81140c;
     box-shadow: -2px 0px 0px #F44336 inset;
   }
   92% {
@@ -421,12 +491,8 @@
   }
 }
 @keyframes dance-fire {
-  59%,89% {
-    left: 40%;
-    width: 0px;
-    height: 0px;
-  }
-  90%,0%,7%,15%,23%,31%,39%,47%,55% {
+  
+  90%,0%,7%,15%,2%,23%,31%,39%,47%,55% {
     left: 40.8%;
     width: 16px;
     height: 20px;
@@ -436,10 +502,55 @@
     left: 41.2%;
     width: 16px;
     height: 20px;
-    background: #FF9800;
+    background: #dd8706;
+  }
+}
+@keyframes dance-fireOut {
+
+  64% {
+    left: 40.8%;
+    width: 0px;
+    height: 0px;
+    background: #FFC107;
+  }
+  
+  0%,7%,15%,2%,23%,31%,39%,47%,55%,62% {
+    left: 40.8%;
+    width: 16px;
+    height: 20px;
+    background: #FFC107;
+  }
+  3%,11%,19%,27%,35%,43%,51%,58% {
+    left: 41.2%;
+    width: 16px;
+    height: 20px;
+    background: #dd8706;
   }
 }
 @keyframes changeto-lower {
+  0%,70%,90% {
+    padding: 0px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #673C63;
+    border-width: 0 0 0 0;
+    border: 0px solid #673C63;
+    transform: translate(-90%, 0%);
+  }
+  71%,89% {
+    background: none;
+    border: solid #673C63;
+    border-radius: 0px;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 1px;
+    float: left;
+    transform-origin: bottom left;
+    transform: rotate(-45deg) translate(-50%, -65%);
+    -webkit-transform: rotate(-45deg) translate(-50%, -65%);
+  }
+}
+@keyframes changeto-lowerOn {
   0%,70%,90% {
     padding: 0px;
     display: inline-block;
@@ -487,9 +598,38 @@
     -webkit-transform: rotate(135deg) translate(-80%, 20%);
   }
 }
+@keyframes changeto-greaterOn {
+  0%,70%,90% {
+    top: 50%;
+    padding: 0px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #673C63;
+    border-width: 0 0 0 0;
+    border: 0px solid #673C63;
+    transform: translate(-80%, 0%);
+  }
+  71%,89% {
+    top: 30%;
+    background: none;
+    border: solid #673C63;
+    border-radius: 0px;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 1px;
+    float: left;
+    transform-origin: bottom left;
+    transform: rotate(135deg) translate(-80%, 20%);
+    -webkit-transform: rotate(135deg) translate(-80%, 20%);
+  }
+}
 
 @media screen and (max-width: 568px) {
     .wrapper {
         transform: scale(.4, .4);
+    }
+
+    #mode{ 
+        top: -120%;
     }
 }
