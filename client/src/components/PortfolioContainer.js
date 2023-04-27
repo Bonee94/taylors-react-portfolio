@@ -20,7 +20,7 @@ export default function PortfolioContainer() {
   // this is checking the value of current page state and returning the proper page
   const renderPage = () => {
     if (currentPage === 'About') {
-      return <About setTransition={setTransition} transition={transition}/>;
+      return <About setTransition={setTransition} animLight={animLight} transition={transition}/>;
     };
     if (currentPage === 'Portfolio') {
       return <Portfolio setTransition={setTransition} transition={transition}/>;

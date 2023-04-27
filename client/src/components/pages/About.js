@@ -1,18 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import profilePic from "../../assets/images/Taylor-profile-pic.png";
 import "../../styles/About.css";
 import Transition from '../Transition';
 
 
-export default function About({transition, setTransition}) {
-
+export default function About({ animLight, transition, setTransition}) {
   useEffect(() => {
     setTransition(false)
   })
 
   return (
     <div className="page-container">
-      <div className="page-card">
+      <div className={animLight ? "page-card-light" : "page-card"}>
       <Transition transition={transition}/> 
         <h1>About Me</h1>
         <section className="profile-section">

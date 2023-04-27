@@ -507,14 +507,14 @@ button {
 }
 @keyframes dance-fireOut {
 
-  64% {
+  61% {
     left: 40.8%;
     width: 0px;
     height: 0px;
     background: #FFC107;
   }
   
-  0%,7%,15%,2%,23%,31%,39%,47%,55%,62% {
+  0%,7%,15%,2%,23%,31%,39%,47%,55%,60% {
     left: 40.8%;
     width: 16px;
     height: 20px;
