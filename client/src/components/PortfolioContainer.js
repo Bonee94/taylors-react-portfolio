@@ -11,10 +11,11 @@ import Resume from './pages/Resume';
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
   const [transition, setTransition] = useState(Boolean)
-
+  const [animLight, setAnimLight] = useState(false);
+  
   useEffect(() => {
-      window.scrollTo(0, 0);
-  });
+    window.scrollTo(0, 0);
+  }, [currentPage]);
 
   // this is checking the value of current page state and returning the proper page
   const renderPage = () => {
@@ -41,7 +42,7 @@ export default function PortfolioContainer() {
     <div>
       <Header currentPage={currentPage} setTransition={setTransition} handlePageChange={handlePageChange} />
       {renderPage()}
-      <Footer/>
+      <Footer setAnimLight={setAnimLight} animLight={animLight}/>
     </div>
   );
 }

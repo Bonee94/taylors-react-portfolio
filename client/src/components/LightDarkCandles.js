@@ -1,9 +1,7 @@
 import React, {useState} from "react";
 import "../styles/lightDarkCandles.css";
 
-export default function LightDarkCandles({}) {
-    const [animLight, setAnimLight] = useState(false);
-
+export default function LightDarkCandles({animLight, setAnimLight}) {
     const handleColorMode = () => {
         setAnimLight(!animLight)
     }
