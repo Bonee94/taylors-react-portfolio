@@ -30,6 +30,10 @@ const Images = ({ imgSrc, imgAlt }) => {
       return (
         <img src={require("../assets/images/sb-realty.PNG")} alt={imgAlt} />
       );
+    case "bdrApp":
+      return (
+        <img src={require("../assets/images/bdr-app-screenshot.PNG")} alt={imgAlt} />
+      );
       
       default: 
       return
