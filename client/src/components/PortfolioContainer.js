@@ -39,7 +39,7 @@ export default function PortfolioContainer() {
   };
 
   return (
-    <div>
+    <div className="app-container">
       <Header currentPage={currentPage} setTransition={setTransition} handlePageChange={handlePageChange} />
       {renderPage()}
       <Footer setAnimLight={setAnimLight} animLight={animLight}/>
