@@ -9,7 +9,7 @@ export default function Resume({transition, setTransition}) {
   })
 
   const url =
-    "/Taylor-Turner-Resume.pdf";
+    "/Taylor-Turner-Resume-and-Cert.pdf";
   
   return (
     <div className='page-container'>
